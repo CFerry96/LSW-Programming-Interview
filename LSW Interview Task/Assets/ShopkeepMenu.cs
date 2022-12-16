@@ -35,11 +35,11 @@ public class ShopkeepMenu : MonoBehaviour
             Browsing = false;
         }
 
-        if(Browsing == true)
+        if (Browsing)
         {
             ShopMenu.SetActive(true);
         }
-        else
+        else if (!Browsing)
         {
             ShopMenu.SetActive(false);
         }
