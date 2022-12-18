@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86412823344ed94bbc235e87d0186fd, type: 3}
   m_Name: OrangeJacket
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1657252559307484513, guid: 7e4df75adacc5fc41a91088d55b6a8ba, type: 3}
-  type: 4
+  prefab: {fileID: 4705929888849706958, guid: 7e4df75adacc5fc41a91088d55b6a8ba, type: 3}
+  type: 0
   description: 

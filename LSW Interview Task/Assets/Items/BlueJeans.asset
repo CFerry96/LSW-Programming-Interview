@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86412823344ed94bbc235e87d0186fd, type: 3}
   m_Name: BlueJeans
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8701430405797078939, guid: 632f83e14fd7d2c4fa2d56ac38633c48, type: 3}
-  type: 1
+  prefab: {fileID: 1237463168060401212, guid: 632f83e14fd7d2c4fa2d56ac38633c48, type: 3}
+  type: 0
   description: A stylish pair of Blue Jeans

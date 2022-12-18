@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86412823344ed94bbc235e87d0186fd, type: 3}
   m_Name: GreenJacket
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1051660784421103384, guid: fe9589c254227314aa5ae2c4868691bf, type: 3}
-  type: 3
+  prefab: {fileID: 140960128022986990, guid: fe9589c254227314aa5ae2c4868691bf, type: 3}
+  type: 0
   description: 

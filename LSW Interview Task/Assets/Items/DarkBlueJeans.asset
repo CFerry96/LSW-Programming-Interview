@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86412823344ed94bbc235e87d0186fd, type: 3}
   m_Name: DarkBlueJeans
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9168072494045821740, guid: ff629cec142a2264186fb774a62cd7dd, type: 3}
-  type: 2
+  prefab: {fileID: 1076842224840447044, guid: ff629cec142a2264186fb774a62cd7dd, type: 3}
+  type: 0
   description: 
