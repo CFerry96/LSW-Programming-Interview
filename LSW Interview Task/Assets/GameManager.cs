@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public bool isPaused;
+
+    public int Cash;
+    public Text Wallet;
 
     void Awake()
     {
@@ -24,9 +29,13 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    
-    void Update()
+    private void Start()
+    {     
+        Cash = 200;
+    }
+
+    private void Update()
     {
-        
+        Wallet.text = Cash.ToString();
     }
 }

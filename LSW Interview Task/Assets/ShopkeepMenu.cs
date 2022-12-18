@@ -16,7 +16,7 @@ public class ShopkeepMenu : MonoBehaviour
         Browsing = false;
         PlayerInArea = false;
         Collider = this.gameObject.GetComponent<BoxCollider2D>();
-        ShopMenu = GameObject.FindGameObjectWithTag("Menu");
+        ShopMenu = GameObject.FindGameObjectWithTag("ShopMenu");
     }
 
     // Update is called once per frame
