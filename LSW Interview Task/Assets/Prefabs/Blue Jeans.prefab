@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6374262790278171720}
   - component: {fileID: 2156656701322224142}
   - component: {fileID: 2248973125834186118}
+  - component: {fileID: 7356831682278881017}
   m_Layer: 5
   m_Name: Blue Jeans
   m_TagString: Untagged
@@ -121,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 625776363, guid: 6c7c1e553ca24dc468414d2acf8463d5, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: OutfitChanger, Assembly-CSharp
-        m_MethodName: BlueBottoms
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -132,4 +133,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
+--- !u!114 &7356831682278881017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237463168060401212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963390cac9e1cdc49ae400dccdd3a19b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  legIndex: 1

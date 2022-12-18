@@ -9,27 +9,33 @@ public class OutfitChanger : MonoBehaviour
     public List<Sprite> bottoms = new List<Sprite>();
     public List<Sprite> tops = new List<Sprite>();
     private int currentTorsoOption;
-    public int currentLegOption;
+    private int currentLegOption;
     
     public int CurrentTorsoOption
     {
-        get{ return currentTorsoOption; }
+        get{return currentTorsoOption;}
         set 
         {
-            currentTorsoOption = value;
             print("Setting value to:" + value);
+            currentTorsoOption = value;
+            print(currentTorsoOption);
+        }
+    }
+    public int CurrentLegOption
+    {
+        get { return currentLegOption;}
+        set
+        {
+            print("Setting value to:" + value);
+            currentLegOption = value;
+            print(currentLegOption);
         }
     }
 
     private void Awake()
     {
         CurrentTorsoOption = 0;
-        currentLegOption = 0;
-    }
-    public void Update()
-    {
-        ChangeTop();
-        ChangeBottoms();
+        CurrentLegOption = 0;
     }
 
     public void ChangeTop()
@@ -37,31 +43,45 @@ public class OutfitChanger : MonoBehaviour
         Torso.sprite = tops[CurrentTorsoOption];
         
     }
-    public void ChangeBottoms()
+    public void ChangeBottom()
     {
-        Legs.sprite = bottoms[currentLegOption];
+        Legs.sprite = bottoms[CurrentLegOption];
     }
 
-    public void GreenTop()
+    public void ChangeTop(int topIndex)
     {
-        Debug.Log(CurrentTorsoOption);
-        CurrentTorsoOption = 0;
-        Debug.Log(CurrentTorsoOption);
+        CurrentTorsoOption = topIndex;
+        ChangeTop();
     }
 
-    public void OrangeTop()
+    public void ChangeBottom(int bottomIndex)
     {
-        Debug.Log(CurrentTorsoOption);
-        CurrentTorsoOption = 1;
-        Debug.Log(CurrentTorsoOption);
-    }
-
-    public void BlueBottoms()
-    {
-        currentLegOption = 0;
-    }
-    public void DarkBlueBottoms()
-    {
-        currentLegOption = 1;
+        CurrentLegOption = bottomIndex;
+        ChangeBottom();
     }
 }
+
+
+/* public void GreenTop()
+   {
+       CurrentTorsoOption = 0;
+       ChangeTop();
+   }
+
+   public void OrangeTop()
+   {
+       CurrentTorsoOption = 1;
+       ChangeTop();
+   }
+
+   public void BlueBottoms()
+   {
+       currentLegOption = 0;
+       ChangeBottoms();
+   }
+   public void DarkBlueBottoms()
+   {
+       currentLegOption = 1;
+       ChangeBottoms();
+   }
+  */
