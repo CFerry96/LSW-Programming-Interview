@@ -9,17 +9,15 @@ public class Purchased : MonoBehaviour
     //public static GameManager gm;
     private bool sold;
     public int price;
-    private int Wallet;
+    
 
     private void Awake()
     {
         soldOut = GameObject.Find("Sold Out");
-        soldOut.SetActive(false);
-        
+        soldOut.SetActive(false);       
     }
     private void Start()
     {
-        Wallet = GameManager.instance.Cash;
         sold = false;
     }
 
@@ -28,7 +26,7 @@ public class Purchased : MonoBehaviour
        
         if(!sold)
         {
-            if(Wallet <= price)
+            if(GameManager.instance.Cash > price)
             {
                 var item = this.GetComponent<Item>();
                 inventory.AddItem(item.item, 1);

@@ -11,13 +11,16 @@ public class PlayerController : MonoBehaviour
     private float moveHorizontal;
     private float moveVertical;
     
+    public int equippedTop;
+    public int equippedBottom;
+
     [SerializeField]
     private float movementSpeed = 3f;
     
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>(); 
     }
 
 
@@ -27,11 +30,24 @@ public class PlayerController : MonoBehaviour
         this.moveVertical = Input.GetAxis("Vertical") * movementSpeed; // Y-Axis
 
         rb.velocity = new Vector2(moveHorizontal, moveVertical);
+
+        
+        //bottoms[1] = GameObject.FindWithTag("Blue");
+        //bottoms[2] = GameObject.FindWithTag("DarkBlue");
+
+        //tops.Add(GameObject.FindWithTag("Green"));
+        //tops.Add(GameObject.FindWithTag("Orange"));
+       // Clothes();
     }
 
     private void OnApplicationQuit()
     {
         inventory.Container.Clear();
+    }
+
+    public void Clothes()
+    {
+        
     }
 
 }

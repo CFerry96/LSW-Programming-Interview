@@ -7,6 +7,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3882803558034704827, guid: f3b4236212018fd45a37d54315747634, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3882803558034704827, guid: f3b4236212018fd45a37d54315747634, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3882803558034704827, guid: f3b4236212018fd45a37d54315747634, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 625776363, guid: 6c7c1e553ca24dc468414d2acf8463d5, type: 3}
+    - target: {fileID: -3882803558034704827, guid: f3b4236212018fd45a37d54315747634, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3882803558034704827, guid: f3b4236212018fd45a37d54315747634, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BlueBottoms
+      objectReference: {fileID: 0}
+    - target: {fileID: -3882803558034704827, guid: f3b4236212018fd45a37d54315747634, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OutfitChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -3882803558034704827, guid: f3b4236212018fd45a37d54315747634, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 635261181723034322, guid: f3b4236212018fd45a37d54315747634, type: 3}
       propertyPath: m_Name
       value: Inventory_Slot Variant

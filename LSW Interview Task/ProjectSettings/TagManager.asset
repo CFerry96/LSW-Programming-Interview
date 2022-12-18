@@ -6,6 +6,10 @@ TagManager:
   tags:
   - ShopMenu
   - Shop
+  - Green
+  - Orange
+  - DarkBlue
+  - Blue
   layers:
   - Default
   - TransparentFX
