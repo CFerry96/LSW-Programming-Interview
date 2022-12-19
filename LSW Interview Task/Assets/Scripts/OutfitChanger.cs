@@ -65,26 +65,3 @@ public class OutfitChanger : MonoBehaviour
 }
 
 
-/* public void GreenTop()
-   {
-       CurrentTorsoOption = 0;
-       ChangeTop();
-   }
-
-   public void OrangeTop()
-   {
-       CurrentTorsoOption = 1;
-       ChangeTop();
-   }
-
-   public void BlueBottoms()
-   {
-       currentLegOption = 0;
-       ChangeBottoms();
-   }
-   public void DarkBlueBottoms()
-   {
-       currentLegOption = 1;
-       ChangeBottoms();
-   }
-  */

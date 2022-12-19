@@ -9,6 +9,8 @@ public class UIItemLegs : MonoBehaviour
 
     [SerializeField] private int legIndex = 1;
 
+    public InventorySlot inventory;
+
     // Start is called before the first frame update
     void Start()
     {

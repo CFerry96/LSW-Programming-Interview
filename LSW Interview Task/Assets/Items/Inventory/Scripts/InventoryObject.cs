@@ -8,42 +8,18 @@ public class InventoryObject : ScriptableObject
     public List<InventorySlot> Container = new List<InventorySlot>();
     public void AddItem(ItemObject _item, int _amount)
     {
-        bool hasItem = false;
-        for(int i = 0; i < Container.Count; i++)
-        {
-            if (Container[i].item == _item)
-            {
-                Container[i].AddAmount(_amount);
-                hasItem = true;
-                break;
-            }
-        }
-
-        if(!hasItem)
-        {
-            Container.Add(new InventorySlot(_item, _amount));
-        }
+        var newSlot = new InventorySlot(_item, _amount);
+        Container.Add(newSlot);
     }
 
     public void RemoveItem(ItemObject _item, int _amount)
     {
-        bool hasItem = true;
-        for (int i = 0; i < Container.Count; i++)
-        {
-            if (Container[i].item == _item)
-            {
-                Container[i].RemoveAmount(_amount);
-                _item = null;
-                hasItem = false;
-                break;
-            }
-        }
-        
+        var slotIndex = Container.FindIndex(slot => slot.item.prefab == _item.prefab);
 
-        if (hasItem)
-        {
-            Container.Remove(new InventorySlot(_item, _amount));
-        }
+        if (slotIndex == -1)
+            return;
+
+        Container.RemoveAt(slotIndex);
     }
 }
 

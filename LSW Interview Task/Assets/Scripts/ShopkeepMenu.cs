@@ -24,34 +24,42 @@ public class ShopkeepMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PlayerInArea == true && Browsing == false && Input.GetKey(KeyCode.E))
-        {
-            Browsing = true;
-            Ekey.SetActive(false);
-        }
-        else if (PlayerInArea == true && Browsing == true && Input.GetKey(KeyCode.X))
+        if(GameManager.instance.isPaused)
         {
             Browsing = false;
-            Ekey.SetActive(true);
-        }
-        else if(PlayerInArea == false)
-        {
-            Browsing = false;
-            Ekey.SetActive(false);
-            
-        }
-
-        if (Browsing)
-        {
-            ShopMenu.SetActive(true);
-            IKey.SetActive(false);
-
-        }
-        else if (!Browsing)
-        {
             ShopMenu.SetActive(false);
-            IKey.SetActive(true);
         }
+        else if(!GameManager.instance.isPaused)
+        {
+            if (PlayerInArea == true && Browsing == false && Input.GetKey(KeyCode.E))
+            {
+                Browsing = true;
+                Ekey.SetActive(false);
+            }
+            else if (PlayerInArea == true && Browsing == true && Input.GetKey(KeyCode.X))
+            {
+                Browsing = false;
+                Ekey.SetActive(true);
+            }
+            else if (PlayerInArea == false)
+            {
+                Browsing = false;
+                Ekey.SetActive(false);
+
+            }
+
+            if (Browsing)
+            {
+                ShopMenu.SetActive(true);
+                IKey.SetActive(false);
+
+            }
+            else if (!Browsing)
+            {
+                ShopMenu.SetActive(false);
+                IKey.SetActive(true);
+            }
+        } 
     }
 
     private void OnTriggerEnter2D(Collider2D other)

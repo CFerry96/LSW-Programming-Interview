@@ -14,8 +14,8 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         InventoryControl();
+        End();
     }
-
     private void InventoryControl()
     {
         if(Input.GetKeyDown(KeyCode.I))
@@ -31,17 +31,25 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void End()
+    {
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
     private void Resume()
     {
         inventoryMenu.gameObject.SetActive(false);
-        Time.timeScale = 1.0f;
+        //Time.timeScale = 1.0f;
         GameManager.instance.isPaused = false;
     }
 
     private void Pause()
     {
         inventoryMenu.gameObject.SetActive(true);
-        Time.timeScale = 0.0f;
+        //Time.timeScale = 0.0f;
         GameManager.instance.isPaused = true;
     }
 }
