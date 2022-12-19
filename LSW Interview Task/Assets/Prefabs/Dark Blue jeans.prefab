@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1687423341510352070}
   - component: {fileID: 1218083271099452729}
   - component: {fileID: 7624893092810198525}
+  - component: {fileID: -3649884664882005416}
   m_Layer: 5
   m_Name: Dark Blue jeans
   m_TagString: Untagged
@@ -148,3 +149,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 0}
   legIndex: 0
+--- !u!114 &-3649884664882005416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076842224840447044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb82ec7c317aa3540a7901784ab231db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IS:
+    item: {fileID: 11400000, guid: 09ba2960a36ddaa43b367271c26ddd05, type: 2}
+    amount: 0

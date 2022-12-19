@@ -15,11 +15,13 @@ public class DisplayInventory : MonoBehaviour
     {
         CreateDisplay();
     }
-   
-    void Update()
+
+    private void Update()
     {
         UpdateDisplay();
     }
+
+
 
     public void CreateDisplay()
     {
@@ -41,7 +43,7 @@ public class DisplayInventory : MonoBehaviour
         {
             if (itemsDisplayed.ContainsKey(inventory.Container[i]))
             {
-
+             
             }
             else
             {

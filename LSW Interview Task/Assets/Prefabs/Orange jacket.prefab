@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2161895348965931028}
   - component: {fileID: 8215108731236914129}
   - component: {fileID: -2483627520408272572}
+  - component: {fileID: 5880513451402388271}
   m_Layer: 5
   m_Name: Orange jacket
   m_TagString: Untagged
@@ -148,3 +149,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 0}
   torsoIndex: 1
+--- !u!114 &5880513451402388271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705929888849706958}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb82ec7c317aa3540a7901784ab231db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IS:
+    item: {fileID: 11400000, guid: 41a85fb893e6ff249abab7f8e2d85ecb, type: 2}
+    amount: 2

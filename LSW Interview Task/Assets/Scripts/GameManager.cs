@@ -29,11 +29,6 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {     
-        Cash = 200;
-    }
-
     private void Update()
     {
         Wallet.text = Cash.ToString();

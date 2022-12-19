@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class OutfitChanger : MonoBehaviour
 {
     public SpriteRenderer Torso, Legs;
+    public Image torso,legs;
     public List<Sprite> bottoms = new List<Sprite>();
     public List<Sprite> tops = new List<Sprite>();
     private int currentTorsoOption;
@@ -41,11 +42,13 @@ public class OutfitChanger : MonoBehaviour
     public void ChangeTop()
     {
         Torso.sprite = tops[CurrentTorsoOption];
-        
+        torso.sprite = tops[CurrentTorsoOption];
+
     }
     public void ChangeBottom()
     {
         Legs.sprite = bottoms[CurrentLegOption];
+        legs.sprite = bottoms[CurrentLegOption];
     }
 
     public void ChangeTop(int topIndex)

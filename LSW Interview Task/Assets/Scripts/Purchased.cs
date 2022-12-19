@@ -21,6 +21,18 @@ public class Purchased : MonoBehaviour
         sold = false;
     }
 
+    public void BuyOrSell()
+    {
+        if(sold)
+        {
+            Sell();
+        }
+        else if(!sold)
+        {
+            Bought();
+        }
+    }
+
     public void Bought()
     {
        
@@ -35,6 +47,7 @@ public class Purchased : MonoBehaviour
                 soldOut.SetActive(true);
                 sold = true;
                 GameManager.instance.Cash -= price;
+                Debug.Log("Bought");
             } 
         }
         else if (sold)
@@ -42,5 +55,27 @@ public class Purchased : MonoBehaviour
             
         }
         
+    }
+
+    public void Sell()
+    {
+        if(sold)
+        {
+            
+                var item = this.GetComponent<Item>();
+                inventory.RemoveItem(item.item, 1);
+
+
+                soldOut.SetActive(false);
+                sold = false;
+                GameManager.instance.Cash += price;
+
+            Debug.Log("Sold");
+           
+        }
+        else if (!sold)
+        {
+
+        }
     }
 }

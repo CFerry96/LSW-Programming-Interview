@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5385817787188958731}
   - component: {fileID: 7579683621633473245}
   - component: {fileID: 3840193340968313199}
+  - component: {fileID: 4884227906535339993}
   m_Layer: 5
   m_Name: Green Jacket
   m_TagString: Untagged
@@ -148,3 +149,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 0}
   torsoIndex: 0
+--- !u!114 &4884227906535339993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140960128022986990}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb82ec7c317aa3540a7901784ab231db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IS:
+    item: {fileID: 11400000, guid: 111e969e18ed6c64b8ee4027b399d672, type: 2}
+    amount: 0
