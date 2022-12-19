@@ -349,6 +349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
+--- !u!1 &123409255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5835744289698061996, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
+  m_PrefabInstance: {fileID: 582396859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &143500935
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +568,11 @@ MonoBehaviour:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2147398377372276221, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
   m_PrefabInstance: {fileID: 740076862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &183287094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5835744289698061996, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
+  m_PrefabInstance: {fileID: 1368427084}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &193646488
 PrefabInstance:
@@ -1134,6 +1144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 7d67a7e587f79884fbaf741b00e5cd60, type: 2}
+  soldOut: {fileID: 605923087}
   price: 75
 --- !u!114 &285600127
 MonoBehaviour:
@@ -1850,10 +1861,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
+--- !u!1 &605923087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5835744289698061996, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
+  m_PrefabInstance: {fileID: 271728133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &644866565 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2147398377372276221, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
   m_PrefabInstance: {fileID: 203970736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &684910697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5835744289698061996, guid: da7e4facd9ca4134a8fa227891976f82, type: 3}
+  m_PrefabInstance: {fileID: 1847405522}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &711133398
 GameObject:
@@ -2800,6 +2821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 7d67a7e587f79884fbaf741b00e5cd60, type: 2}
+  soldOut: {fileID: 684910697}
   price: 70
 --- !u!114 &1024464142
 MonoBehaviour:
@@ -4328,6 +4350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 7d67a7e587f79884fbaf741b00e5cd60, type: 2}
+  soldOut: {fileID: 183287094}
   price: 50
 --- !u!1 &1451365258
 GameObject:
@@ -4434,6 +4457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 7d67a7e587f79884fbaf741b00e5cd60, type: 2}
+  soldOut: {fileID: 123409255}
   price: 80
 --- !u!114 &1679953546
 MonoBehaviour:

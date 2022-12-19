@@ -12,6 +12,8 @@ public class OutfitChanger : MonoBehaviour
     private int currentTorsoOption;
     private int currentLegOption;
     
+    //This script gives the option to change the clothes on the character from that in the inventory
+
     public int CurrentTorsoOption
     {
         get{return currentTorsoOption;}

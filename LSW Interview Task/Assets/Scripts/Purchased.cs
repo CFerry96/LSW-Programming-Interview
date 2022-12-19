@@ -5,14 +5,11 @@ using UnityEngine;
 public class Purchased : MonoBehaviour
 {
     public InventoryObject inventory;
-    private GameObject soldOut;
+    public GameObject soldOut;
     private bool sold;
     public int price;
-    
-
     private void Awake()
-    {
-        soldOut = GameObject.Find("Sold Out");
+    {  
         soldOut.SetActive(false);       
     }
     private void Start()
@@ -22,6 +19,7 @@ public class Purchased : MonoBehaviour
 
     public void BuyOrSell()
     {
+        //Determines wether you can buy or sell depending on wether you already have an item or not
         if(sold)
         {
             Sell();
@@ -34,6 +32,7 @@ public class Purchased : MonoBehaviour
 
     public void Bought()
     {
+        //Adds the bought item to the inventory 
         if (GameManager.instance.Cash > price)
         {
             var item = this.GetComponent<Item>();
@@ -49,7 +48,7 @@ public class Purchased : MonoBehaviour
 
     public void Sell()
     {
-
+        //Remove the sold item from the inventory
         var item = this.GetComponent<Item>();
         inventory.RemoveItem(item.item, 1);
 

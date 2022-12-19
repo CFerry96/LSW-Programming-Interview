@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     }
     private void InventoryControl()
     {
+        //Opens Inventory
         if(Input.GetKeyDown(KeyCode.I))
         {
             if(GameManager.instance.isPaused)
@@ -33,6 +34,7 @@ public class UIManager : MonoBehaviour
 
     private void End()
     {
+        //Ends Game
         if(Input.GetKey(KeyCode.Escape))
         {
             Application.Quit();

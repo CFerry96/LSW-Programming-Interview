@@ -7,6 +7,7 @@ public class DefaultObject : ItemObject
 {
     private void Awake()
     {
+        //For creating a new inventory system
         type = ItemType.Default;
     }
 }

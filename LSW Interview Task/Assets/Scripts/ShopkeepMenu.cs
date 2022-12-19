@@ -24,6 +24,8 @@ public class ShopkeepMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If browing is true the shop is allowed to open
+        //You can not open the shop and the inventory at the same time
         if(GameManager.instance.isPaused)
         {
             Browsing = false;

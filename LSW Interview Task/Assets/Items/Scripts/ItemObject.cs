@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//For creating the Item Prefabs/Scriptables
 public enum ItemType
 {
     Default,
